@@ -2,14 +2,7 @@
 <html>
 <head>
   <title>Salary Calculator</title>
-  <script>
-    function calculateSalary() {
-      var hoursWorked = parseFloat(document.getElementById("hours").value);
-      var hourlyRate = parseFloat(document.getElementById("rate").value);
-      var salary = hoursWorked * hourlyRate;
-      document.getElementById("result").innerHTML = "Monthly Salary: $" + salary;
-    }
-  </script>
+  <script src="app1.js"></script>
 </head>
 <body>
   <h1>Salary Calculator!!!!!!!!!</h1>
@@ -19,5 +12,14 @@
   <input type="number" id="rate"><br><br>
   <button onclick="calculateSalary()">Calculate</button><br><br>
   <div id="result"></div>
+  <div></div>
+  <h1>We suggest to spend 30% or less from your salary on rent</h1> 
+  <div id="rent"></div>
+  <div></div>
+  <h1>We suggest to spend 200$ on greocery per person</h1>
+  <label for="person">number of person</label>
+  <input type="number" id="person"><br><br>
+  <button onclick="calculateGrocery()">Calculate</button><br><br>
+  <div id= "per"></div>
 </body>
 </html>
